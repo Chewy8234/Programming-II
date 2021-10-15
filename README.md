@@ -1,2 +1,2 @@
 # Programming-II
-To be announced until the user making the project is 100% committed on one project. 
+This project is going to an moblie application.
