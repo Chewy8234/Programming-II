@@ -1,0 +1,60 @@
+\hypertarget{_arrays_and_string_8h_source}{}\doxysection{Arrays\+And\+String.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ARRAYSANDSTRING\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ARRAYSANDSTRING\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_arrays_and_string}{ArraysAndString}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \textcolor{keywordtype}{int} choice;}
+\DoxyCodeLine{14     std::string name;}
+\DoxyCodeLine{15     \textcolor{keywordtype}{int} option;}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} question;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} age;}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \textcolor{comment}{// Default Constructor}}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_arrays_and_string}{ArraysAndString}}();}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_arrays_and_string}{ArraysAndString}}(std::string name);}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_arrays_and_string}{ArraysAndString}}(std::string name, \textcolor{keywordtype}{int} age);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} setName(std::string n);}
+\DoxyCodeLine{25     std::string getName(std::string n);}
+\DoxyCodeLine{26     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setOption();}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getOption(\textcolor{keywordtype}{int} option);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} setAge(\textcolor{keywordtype}{int} a);}
+\DoxyCodeLine{29     \textcolor{keywordtype}{int} getAge(\textcolor{keywordtype}{int} a);}
+\DoxyCodeLine{30     }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} SetArrayAndString(\textcolor{keywordtype}{int} *choice)}
+\DoxyCodeLine{32     \{}
+\DoxyCodeLine{33         this-\/>choice = *choice;}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} setQuestion(\textcolor{keywordtype}{int} question);}
+\DoxyCodeLine{36     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getQuestion(\textcolor{keywordtype}{int} question);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{keyword}{class }\mbox{\hyperlink{class_arrays_and_string1}{ArraysAndString1}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_arrays_and_string}{ArraysAndString}}}
+\DoxyCodeLine{43 \{}
+\DoxyCodeLine{44 \textcolor{keyword}{private}:}
+\DoxyCodeLine{45     \textcolor{keywordtype}{int} choice;}
+\DoxyCodeLine{46 \textcolor{keyword}{public}:}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} setAttempt(\textcolor{keywordtype}{int} *attempt);}
+\DoxyCodeLine{48     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getAttempt(\textcolor{keywordtype}{int} choice);}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} question(\textcolor{keywordtype}{int} choice);}
+\DoxyCodeLine{50     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getAnswer(\textcolor{keywordtype}{int} answer);}
+\DoxyCodeLine{51     }
+\DoxyCodeLine{52 \};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ARRAYSLISTANDSTRING\_H}}
+
+\end{DoxyCode}

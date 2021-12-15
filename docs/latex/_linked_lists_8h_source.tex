@@ -1,0 +1,44 @@
+\hypertarget{_linked_lists_8h_source}{}\doxysection{Linked\+Lists.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef LINKEDLISTS\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define LINKEDLISTS\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_linked_lists}{LinkedLists}} }
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     \textcolor{keywordtype}{int} choice;}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} option;}
+\DoxyCodeLine{12     \textcolor{keywordtype}{int} question;}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \textcolor{comment}{// Default Constructor}}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_linked_lists}{LinkedLists}}();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setOption();}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getOption(\textcolor{keywordtype}{int} option);}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} setQuestion(\textcolor{keywordtype}{int} question)}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21         this-\/>question = question;}
+\DoxyCodeLine{22     \}}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getQuestion(\textcolor{keywordtype}{int} question);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} SetLinkedLists(\textcolor{keywordtype}{int}* choice)}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         this-\/>choice = *choice;}
+\DoxyCodeLine{29     \}}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getAttempt(\textcolor{keywordtype}{int} choice);}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} question2(\textcolor{keywordtype}{int} choice);}
+\DoxyCodeLine{32     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getAnswer(\textcolor{keywordtype}{int} answer);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// LINKEDLISTS\_H}}
+
+\end{DoxyCode}
