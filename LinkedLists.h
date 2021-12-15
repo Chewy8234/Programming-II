@@ -2,11 +2,13 @@
 #define LINKEDLISTS_H
 #include <iostream>
 
+#include "ArraysAndString.h"
+//LO1.Designand implement a class.
 
-
-class LinkedLists 
+class LinkedLists : public ArraysAndString1
 {
 private:
+	// LO6. Use object-oriented encapsulation mechanisms such as interfaces and private members.
 	int choice;
 	int option;
 	int question;
@@ -27,8 +29,10 @@ public:
 	{
 		this->choice = *choice;
 	}
+	// LO3. Correctly reason about control flow in a program using dynamic dispatch. 
 	virtual int getAttempt(int choice);
 	void question2(int choice);
+	// LO3. Correctly reason about control flow in a program using dynamic dispatch. 
 	virtual int getAnswer(int answer);
 
 
