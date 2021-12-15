@@ -1,0 +1,36 @@
+\hypertarget{_sorting_and_searching_8h_source}{}\doxysection{Sorting\+And\+Searching.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SORTINGANDSEARCHING\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SORTINGANDSEARCHING\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}ArraysAndString.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_sorting_and_searching}{SortingAndSearching}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_arrays_and_string}{ArraysAndString}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{private}:}
+\DoxyCodeLine{9     \textcolor{keywordtype}{int} option;}
+\DoxyCodeLine{10     \textcolor{keywordtype}{int} question;}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} m\_answer;}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \textcolor{comment}{//Default Constructor}}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_sorting_and_searching}{SortingAndSearching}}();}
+\DoxyCodeLine{15     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setOption();}
+\DoxyCodeLine{16     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getOption(\textcolor{keywordtype}{int} option);}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setQuestion(\textcolor{keywordtype}{int} question);}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{int} getQuestion(\textcolor{keywordtype}{int} question);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} setAttempt(\textcolor{keywordtype}{int}* attempt);}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getAttempt(\textcolor{keywordtype}{int} choice);}
+\DoxyCodeLine{24     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} setAnswer(\textcolor{keywordtype}{int} answer);}
+\DoxyCodeLine{25     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getAnswer(\textcolor{keywordtype}{int} answer);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} Sortquestion(\textcolor{keywordtype}{int} choice);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//SORTINGANDSEARCHING\_H}}
+
+\end{DoxyCode}
