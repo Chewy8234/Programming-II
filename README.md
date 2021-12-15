@@ -11,3 +11,5 @@ The screenshots below depict the class diagrams of this program and showing inhe
 
 ![image](https://user-images.githubusercontent.com/72936062/146118658-dbd5eea1-6487-4b32-bb89-78b327780fec.png)
 
+![image](https://user-images.githubusercontent.com/72936062/146119162-f563ae2d-cf43-46df-97de-b69fe210e802.png)
+
