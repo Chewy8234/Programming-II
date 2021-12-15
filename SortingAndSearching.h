@@ -1,32 +1,29 @@
 #ifndef SORTINGANDSEARCHING_H
 #define SORTINGANDSEARCHING_H
 
-#include "ArraysAndString.h"
+#include "LinkedLists.h"
 
-class SortingAndSearching : public ArraysAndString
+class SortingAndSearching : public LinkedLists
 {
 private:
 	int option;
+	int question;
+	int m_answer;
 public:
 	//Default Constructor
 	SortingAndSearching();
-	virtual void setOption();
+	virtual void setOption(int o);
 	virtual int getOption(int option);
+
+	virtual void setQuestion(int question);
+
+	int getQuestion(int question);
 
 	void setAttempt(int* attempt);
 	virtual int getAttempt(int choice);
-
-
-	virtual int getChoice(int choice)
-	{
-		if (choice == 1)
-		{
-			std::cout << "Sorted Merge: You are given two sorted arrays, A and B, where A has a large enough buffer at"
-				<< "the end to hold B. Wrote a method a merge B into A in sorted order";
-		}
-
-		return choice;
-	}
+	virtual void setAnswer(int answer);
+	virtual int getAnswer(int answer);
+	void Sortquestion(int choice);
 
 
 };
