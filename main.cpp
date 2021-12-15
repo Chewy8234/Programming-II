@@ -78,8 +78,11 @@ std::string Welcome()
 	std::cout << "Enter age: " << "\n";
 	std::cin >> age;
 	ArraysAndString str;
+	// LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
+	// The procedural approach will be using std::cout << name; while the object-oriented approach will use as 
+	// an example str.getName(name) to receive the name
 	std::cout << "Welcome " << str.getName(name) << "!" << "\n"
-		<< "Age: " << str.getAge(age)<< "\n"
+		<< "Age: " << str.getAge(age) << "\n"
 		<< "This program is to help prepare the user to" << "\n"
 		<< "understand and answer questions related to questions from Cracking the Code Interview\n";
 
@@ -97,7 +100,7 @@ void preview()
 	SortingAndSearching preview3;
 
 	std::cout << "Do you want to preview of topics that will help with solving these programs?\n "
-		<< "Enter 1 for Arrays and String, Enter 2 for Linked Lists, Enter 3 for Sorting and Searching\n," 
+		<< "Enter 1 for Arrays and String, Enter 2 for Linked Lists, Enter 3 for Sorting and Searching\n,"
 		"Enter 4 to skip:\n"
 		<< "=> ";
 	std::cin >> option;
@@ -124,8 +127,12 @@ void preview()
 
 void multipleChoice()
 {
+	// creating a new data type of ArraysAndString1, LinkedLists, and SortingSearching
+	// ArraysAndString1 question;
 	ArraysAndString1* question = new ArraysAndString1;
+	// LinkedLists lists;
 	LinkedLists* lists = new LinkedLists;
+	// SortingAndSearching sort;
 	SortingAndSearching* sort = new SortingAndSearching;
 	int choice;
 	int option;
@@ -150,17 +157,23 @@ void multipleChoice()
 	case 1:
 		if (option == 1)
 		{
+			// could have used question.getQuestion(choice);
 			question->getQuestion(choice);
+			// question.question(choice);
 			question->question(choice);
 		}
 		else if (option == 2)
 		{
+			// lists.getQuestion(choice);
 			lists->getQuestion(choice);
+			//lists.question2(choice);
 			lists->question2(choice);
 		}
 		else if (option == 3)
 		{
+			// sort.getQuestion(choice);
 			sort->getQuestion(choice);
+			// sort.SortQuestion(choice);
 			sort->Sortquestion(choice);
 		}
 
@@ -168,34 +181,46 @@ void multipleChoice()
 	case 2:
 		if (option == 1)
 		{
+			//question.getQuestion(choice);
 			question->getQuestion(choice);
+			// question.question(choice);
 			question->question(choice);
 		}
 		else if (option == 2)
 		{
+			// lists.getQuestion(choice);
 			lists->getQuestion(choice);
+			//lists.question2(choice);
 			lists->question2(choice);
 		}
 		else if (option == 3)
 		{
+			// sort.getQuestion(choice);
 			sort->getQuestion(choice);
+			// sort.SortQuestion(choice);
 			sort->Sortquestion(choice);
 		}
 		break;
 	case 3:
 		if (option == 1)
 		{
+			//question.getQuestion(choice);
 			question->getQuestion(choice);
+			// question.question(choice);
 			question->question(choice);
 		}
 		else if (option == 2)
 		{
+			// lists.getQuestion(choice);
 			lists->getQuestion(choice);
+			//lists.question2(choice);
 			lists->question2(choice);
 		}
 		else if (option == 3)
 		{
+			// sort.getQuestion(choice);
 			sort->getQuestion(choice);
+			// sort.SortQuestion(choice);
 			sort->Sortquestion(choice);
 		}
 		break;
@@ -206,6 +231,7 @@ void multipleChoice()
 
 void getResultsofArrayAndString()
 {
+	// Another way doing this action will be ArraysAndString1 arrStr
 	ArraysAndString1* arrStr = new ArraysAndString1;
 	int input;
 	std::cout << "Enter 1 for the answer for question one of LinkedLists\n"
@@ -215,11 +241,14 @@ void getResultsofArrayAndString()
 	std::cin >> input;
 	switch (input) {
 	case 1:
+		//arrStr.getAnswer(input);
 		arrStr->getAnswer(input);
 		break;
 	case 2:
+		//arrStr.getAnswer(input);
 		arrStr->getAnswer(input);
 	case 3:
+		//arrStr.getAnswer(input);
 		arrStr->getAnswer(input);
 		break;
 	default:
@@ -230,6 +259,7 @@ void getResultsofArrayAndString()
 
 void getResultsOfLinkedLists()
 {
+	// LinkedList* list = new LinkedLists;
 	LinkedLists list;
 	int answer;
 
@@ -241,11 +271,14 @@ void getResultsOfLinkedLists()
 
 	switch (answer) {
 	case 1:
+		// list->getAnswer(answer)
 		list.getAnswer(answer);
 		break;
 	case 2:
+		// list->getAnswer(answer)
 		list.getAnswer(answer);
 	case 3:
+		// list->getAnswer(answer)
 		list.getAnswer(answer);
 		break;
 	default:
@@ -256,6 +289,7 @@ void getResultsOfLinkedLists()
 
 void getResultsOfSortingAndSearching()
 {
+	//SortingAndSearching * sort = new SortingAndSearching;
 	SortingAndSearching sort;
 	int answer;
 
@@ -267,11 +301,14 @@ void getResultsOfSortingAndSearching()
 
 	switch (answer) {
 	case 1:
+		// sort->getAnswer(answer);
 		sort.getAnswer(answer);
 		break;
 	case 2:
+		// sort->getAnswer(answer)
 		sort.getAnswer(answer);
 	case 3:
+		// sort->getAnswer(answer)
 		sort.getAnswer(answer);
 		break;
 	default:
